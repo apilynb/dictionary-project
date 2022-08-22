@@ -7,7 +7,7 @@ function App() {
       <main>
       <Dictionary />
       </main> 
-    <footer>Coded by Apilyn Bonny</footer>
+    <footer className='mt-5'>Coded by Apilyn Bonny</footer>
     </div>
   );
 }
