@@ -9,7 +9,12 @@ export default function Results(props) {
       <div className="Results text-start">
         <h2 className="text-lowercase"> {props.results.word}</h2>
         {props.results.meanings.map(function (meaning, index) {
-          return <div key={index}> <Meaning meaning={meaning} />  </div>;
+          return (
+            <div key={index}>
+              {" "}
+              <Meaning meaning={meaning} />
+            </div>
+          );
         })}
       </div>
     );

@@ -9,8 +9,6 @@ export default function Dictionary() {
   
   function handleResponse(response) {
     setResults(response.data[0]);
-    console.log(response.data[0].meanings[0].definitions[0].definition)
-
   }
 
   function search(event) {
@@ -22,7 +20,7 @@ export default function Dictionary() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`;
     
     axios.get(apiUrl).then(handleResponse);
-
+    
     return null
   }
 
