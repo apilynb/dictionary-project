@@ -8,8 +8,8 @@ body {
   margin-top: 40px;
 }
 
-.Dictionary {
-  max-width: 650px;
+.App {
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -21,7 +21,7 @@ body {
   background-color: var(--body-background);
 }
 
-.Results section {
+.Results section, .Photos  {
   background-color: #e2f5f5;
   border-radius: 10px;
   padding: 20px;
@@ -83,7 +83,7 @@ body {
   font-size: 16px;
 }
 
-.Results h2 {
+.Results .main-word {
   font-size: 36px;
   font-weight: bold;
   line-height: 1.5;
@@ -99,4 +99,8 @@ body {
   font-size: 14px;
   opacity: 0.8;
   margin-bottom: 10px;
+}
+
+.Photos img {
+  border-radius: 5px;
 }
