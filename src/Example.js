@@ -3,11 +3,11 @@ import React from "react";
 export default function Example(props) {
   if (props.example) {
     return (
-      <div className="Example">
+      <span className="Example">
         <em>
-          <strong>Example:</strong> {props.example}
+          "{props.example}"
         </em>
-      </div>
+      </span>
     );
   } else {
     return null;
