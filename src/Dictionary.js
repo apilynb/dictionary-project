@@ -15,7 +15,6 @@ export default function Dictionary(props) {
   }
 
   function handlePexelsResponse(response) {
-    console.log(response);
     setPhotos(response.data.photos);
   }
 
@@ -47,6 +46,8 @@ export default function Dictionary(props) {
     search();
   }
 
+
+  
   if (loaded) {
     return (
       <div className="Dictionary">
@@ -74,7 +75,7 @@ export default function Dictionary(props) {
             Suggested words: sunset, yoga, weather, sports...
           </div>
         </section>
-        <Results results={results} photos={photos} keyword={keyword} />
+        <Results results={results} photos={photos} />
       </div>
     );
   } else {

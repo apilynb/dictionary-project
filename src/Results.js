@@ -4,8 +4,6 @@ import Phonetics from "./Phonetics";
 import Photos from "./Photos";
 
 export default function Results(props) {
-  console.log(props.results);
-
   if (props.results) {
     return (
       <div className="Results text-start">
@@ -19,7 +17,7 @@ export default function Results(props) {
             );
           })}
         </section>
-          <Photos photos={props.photos} keyword={props.keyword} />
+          <Photos photos={props.photos} keyword={props.results.word} />
         {props.results.meanings.map(function (meaning, index) {
           return (
             <section key={index}>
