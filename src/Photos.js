@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Photos(props) {
   console.log(props.photos);
-  if (props.photos.length >= 1) {
+  if (props.photos) {
     return (
       <section className="Photos">
         <h2 className="text-start">
